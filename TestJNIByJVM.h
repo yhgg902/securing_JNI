@@ -10,9 +10,9 @@ extern "C" {
 /*
  * Class:     TestJNIByJVM
  * Method:    testJNI
- * Signature: (ID)I
+ * Signature: (ID)V
  */
-JNIEXPORT jint JNICALL Java_TestJNIByJVM_testJNI
+JNIEXPORT void JNICALL Java_TestJNIByJVM_testJNI
   (JNIEnv *, jobject, jint, jdouble);
 
 #ifdef __cplusplus

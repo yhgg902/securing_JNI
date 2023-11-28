@@ -7,14 +7,14 @@ public class TestJNIByJVM {
          }
 
     
-    public native int testJNI(int inputInt, double inputDouble);
+    public native void testJNI(int inputInt, double inputDouble);
 
     public static void main(String[] args) {
  
         int input1 = 10;
         double input2 = 9.9;
         TestJNIByJVM testJNIByJVM = new TestJNIByJVM();
-        int res = testJNIByJVM.testJNI(input1, input2);
+        testJNIByJVM.testJNI(input1, input2);
 
 }
 }
